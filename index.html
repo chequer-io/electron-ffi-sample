@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>eleelectron-ffi-sample</title>
+</head>
+
+<body>
+  eleelectron-ffi-sample
+  <script>
+    var ffi = require('ffi');
+
+    var dllSamplePath = "dll/DllSample.dll";
+    var dllSample = ffi.Library(dllSamplePath, {
+      'HelloWorld': ['string', []]
+    });
+
+    var result = dllSample.HelloWorld();
+    alert(result);
+  </script>
+</body>
+
+</html>

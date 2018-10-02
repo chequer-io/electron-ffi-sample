@@ -1,0 +1,30 @@
+{
+  "name": "electron-ffi-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder --win --ia32 install-app-deps",
+    "pack": "electron-builder --win --ia32 --dir",
+    "dist": "electron-builder --win --ia32"
+  },
+  "build": {
+    "directories": {
+      "output": "./elect_builder_output"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "ico.ico"
+    },
+    "extraFiles": [
+      "dll"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^2.0.10",
+    "electron-builder": "^20.28.4"
+  },
+  "dependencies": {
+    "ffi": "^2.2.0"
+  }
+}
