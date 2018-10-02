@@ -2,7 +2,7 @@
 
 ## Run & Pack
 
-Because We are running Windows 32bit dll, you can run it only on Windows.
+Because We are running `ia32 dll`, you can run it only on `Windows`.
 
 You need to node.js 8.x (LTS).
 
@@ -10,8 +10,8 @@ Windows
 
 ```console
 
-	$ npm i
-	$ npm start
+$ npm i
+$ npm start
 
 ```
 
