@@ -1,10 +1,16 @@
 # electron-ffi-sample
 
+## Prerequisite
+
+It is running for `ia32 dll`, you can run it only on `Windows`.
+
+You need to [Node.js 8.x (LTS)](https://nodejs.org/en/download/) and `windows-build-tools`.
+
+```console
+$ npm install --global --production windows-build-tools
+```
+
 ## Run & Pack
-
-Because We are running `ia32 dll`, you can run it only on `Windows`.
-
-You need to node.js 8.x (LTS).
 
 Windows
 
